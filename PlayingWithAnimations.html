@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @keyframes loading {
+        
+        0% {
+          /* left: 35%;
+          top: 35%; */
+        }
+        8.33% {
+          /* left: 55%;
+          top: 35%; */
+          transform: rotate(0deg);
+          background-color: darkred;
+        }
+        25% {
+          /* left: 55%;
+          top: 35%; */
+          transform: rotate(360deg);
+          background-color: darkred;
+        }
+        33.33% {
+          /* left: 55%;
+          top: 55%; */
+          transform: rotate(360deg);
+          transform: scale(1, 1);
+          background-color: darkorange;
+        }
+        41.66% {
+          transform: rotate(360deg);
+          transform: scale(2, 2);
+        }
+        50% {
+          /* left: 55%;
+          top: 55%; */
+          transform: rotate(360deg);
+          transform: scale(1, 1);
+          background-color: darkorange;
+        }
+        58.33% {
+          /* left: 35%;
+          top: 55%; */
+          transform: rotate(360deg);
+          background-color: darkgreen;
+          /* background-color: darkorange; */
+        }
+        75% {
+          /* left: 35%;
+          top: 55%; */
+          transform: rotate(0deg);
+          background-color: darkgreen;
+        }
+        83.33% {
+          /* left: 35%;
+          top: 35%; */
+          transform: rotate(0deg);
+          transform: scale(1, 1);
+
+          background-color: darkblue;
+        }
+        91.66% {
+          transform: rotate(0deg);
+          transform: scale(0.5, 0.5);
+        }
+        100% {
+          /* left: 35%;
+          top: 35%; */
+          transform: rotate(0deg);
+          transform: scale(1, 1);
+        }
+      }
+
+      @keyframes moveLoading {
+        0% {
+          left: 35%;
+          top: 35%;
+        }
+        8.33% {
+          left: 55%;
+          top: 35%;
+        }
+        25% {
+          left: 55%;
+          top: 35%;
+        }
+        33.33% {
+          left: 55%;
+          top: 55%;
+        }
+        50% {
+          left: 55%;
+          top: 55%;
+        }
+        58.33% {
+          left: 35%;
+          top: 55%;
+        }
+        75% {
+          left: 35%;
+          top: 55%;
+        }
+        83.33% {
+          left: 35%;
+          top: 35%;
+        }
+        100% {
+          left: 35%;
+          top: 35%;
+        }
+      }
+
+      .loading-div {
+        position: fixed;
+        left: 35%;
+        top: 35%;
+        height: 100px;
+        width: 100px;
+        background-color: darkblue;
+        animation: moveLoading 12s infinite ease-in-out, loading 12s infinite ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loading-div"></div>
+  </body>
+</html>
